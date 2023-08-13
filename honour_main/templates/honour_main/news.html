@@ -1,0 +1,88 @@
+{% extends 'honour_main/base.html' %}
+{% load static %}
+{% block title %}
+    Honour Ghana-News
+{% endblock title %}
+{% block content %}
+<section>
+    <div class="container-fluid news-bg p-5">
+    <div class="row row-12 d-flex align-items-center top-0 h-100">
+        <div class="col text-white pt-3 animate__animated animate__bounceInDown text-shadow">
+            <h1 class="d-flex justify-content-center pt-5 text-red">News</h1>
+        </div>
+    </div>
+</div>
+</section>
+<section>
+    <div class="row g-1">
+        <div class="col-md-2">
+            <h3>News Letters</h3>
+            <ul>
+                {% for article in object_list %}
+                {% if article.select_category == 'newsletter' %}
+                    <a href=""><li>{{ article.title }}</li></a>
+                {% endif %}
+                {% empty %}
+                    <li>No articles yet.</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <h3>Others</h3>
+            <ul>
+                {% for article in object_list %}
+                {% if article.select_category == 'others' %}
+                    <a href=""><li>{{ article.title }}</li></a>
+                {% endif %}
+                {% empty %}
+                    <li>No articles yet.</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <div class="row g-1">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="https://cdn.pixabay.com/photo/2022/05/11/13/55/nature-7189418__340.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Top Headlines</h5>
+                        <p class="card-text">Our first outrage programe was fire</p>
+                        <a href="#" class="btn btn-primary">Check it out</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="https://cdn.pixabay.com/photo/2022/05/11/13/55/nature-7189418__340.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Top Headlines</h5>
+                        <p class="card-text">Our first outrage programe was fire</p>
+                        <a href="#" class="btn btn-primary">Check it out</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="https://cdn.pixabay.com/photo/2022/05/11/13/55/nature-7189418__340.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Top Headlines</h5>
+                        <p class="card-text">Our first outrage programe was fire</p>
+                        <a href="#" class="btn btn-primary">Check it out</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="https://cdn.pixabay.com/photo/2022/05/11/13/55/nature-7189418__340.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Top Headlines</h5>
+                        <p class="card-text">Our first outrage programe was fire</p>
+                        <a href="#" class="btn btn-primary">Check it out</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

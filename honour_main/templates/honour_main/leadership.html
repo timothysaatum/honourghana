@@ -1,0 +1,92 @@
+{% extends 'honour_main/base.html' %}
+{% load static %}
+{% block title %}
+    Honour Ghana-Leadership
+{% endblock title %}
+{% block content %}
+<div class="container-fluid p-5 leadership-bg">
+    <div class="row row-1 d-flex align-items-center top-0 h-100">
+        <div class="col text-white pt-3 animate__animated animate__bounceInDown text-shadow">
+            <h1 class="d-flex justify-content-center pt-5">Seeking the well being of the nation.</h1>
+            <p class="lead d-flex justify-content-center">We are a citizen-led initiative, founded by concerned citizens.</p>
+        </div>
+    </div>
+</div>
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark background-light justify-content-center">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuCollapse">
+            <span><img src="{% static 'honour_main/images/rectangle-list-solid.svg' %}" style="width: 30px;" class="filter-green"></span>
+        </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-center" id="menuCollapse">
+            <div class="navbar-nav">
+                <a href="#Chairman" class="nav-item nav-link text-muted text-white" id="chairman">CHAIRMAN</a>
+                <a href="#" class="nav-item nav-link text-muted">DIRECTORS</a>
+                <a href="#" class="nav-item nav-link text-muted">COMMUNITY ADVISORS</a>
+                <a href="#" class="nav-item nav-link text-muted">MANAGEMENT</a>
+                <a href="#" class="nav-item nav-link text-muted">FORMER ADVISORS</a>
+            </div>
+        </div>
+    </nav>
+</section>
+<section>
+    <div class="bg-dark text-center p-4" id="chairman">
+        <h1 class="custom-text-color">Chairman</h1>
+    </div>
+    <div class="row g-3 p-3 d-flex justify-content-center">
+        <div class="col-lg-4">
+            <figure class="figure">
+              <img src="{% static 'honour_main/images/assets/webimages/Dr.Odame.png' %}" class="figure-img img-fluid rounded w-75 h-50" alt="chairman">
+              <figcaption class="figure-caption text-center">
+                  <p>Doctor Emmanuel Ankrah Odame</p>
+                <small>Founder and Executive Director of Honour Ghana.</small>
+                <small>He doubles as the technical advisor and lecturer at University of Ghana Medical School.</small>
+                <small></small>
+              </figcaption>
+            </figure>
+        </div>
+        <div>
+            <p>Emmanuel Odame  has worked with different teams to set up different chapters of Honour Ghana.
+            He was the former Director of Policy, Planning, Monitoring and Evaluation of the Ministry of Health, Ghana (2016-2022).
+            He has several publications in the area of health policy, health economics among others.
+            </p>
+            <p>Emmanuel holds a degree in Medicine and a masters in health policy all from the University of Ghana.
+            He also has a specialist qualification in health policy from the Ghana College of Physicians and Surgeons.
+            He has additional qualification in negotiation and leadership from the Harvard Law School.
+            He has also had a lot of trainings in discipleship, and missions.</p>
+        </div>
+</section>
+<!--Directors-->
+<section>
+    <div class="bg-dark text-center p-4" id="chairman">
+        <h1 class="custom-text-color">Directors</h1>
+    </div>
+    <div class="row g-3 p-3 d-flex justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <figure class="figure">
+              <img src="{% static 'honour_main/images/assets/webimages/STEPHAN ANTOH.jpg' %}" class="figure-img img-fluid rounded" alt="chairman">
+              <figcaption class="figure-caption text-center">
+                  <p>Mr. Stephan Antoh</p>
+                <small>Partner at Afriyie, Dwamena and Associates.
+                </small>
+                <small>Stephan engages in charity work
+                    with autistic children in Ghana and
+                    supports the education of deprived
+                    children.
+                </small>
+              </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <figure class="figure">
+              <img src="{% static 'honour_main/images/assets/webimages/Dr. Opoku Ware.png' %}" class="figure-img img-fluid rounded" alt="chairman">
+              <figcaption class="figure-caption text-center">
+                  <p>Doctor Opoku Ware Ampomah</p>
+                <small>CEO Korle Bu Teaching Hospital Board Member of the CHEERS Children’s Club, a non governmental Children’s Welfare Organization QUALIFICATIONS: MBCHB, FWACS, MRCS</small>
+              </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,187 @@
+{% extends 'honour_main/base.html' %}
+{% load static %}
+{% block title %}
+    Honour Ghana-Home
+{% endblock title %}
+
+
+{% block content %}
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'honour_main/images/assets/webimages/IMG-20230617-WA0001.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption animate__animated animate__zoomIn text-shadow">
+        <h1 class="fw-bolder">Honour is Ghana's future</h1>
+        <p class="lead"><span>It has always been and will always be the blueprint for Ghana's success</span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'honour_main/images/assets/webimages/IMG-20230617-WA0007.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption animate__animated animate__zoomIn text-shadow">
+        <h1 class="fw-bolder">Honouring the invincible people of Ghana</h1>
+        <p class="lead"><span>we seek to acknowledge them and tell their stories</span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'honour_main/images/assets/webimages/IMG-20230617-WA0006.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption animate__animated animate__zoomIn text-shadow">
+        <h1 class="fw-bolder d-block">What does honour mean to you?</h1>
+        <p class="lead d-block"><span>share your perspective on honour</span></p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev d-none d-sm-block" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next d-none d-sm-block" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--End of Carousel -->
+
+<!--Red section-->
+  <div class="container-fluid bg-danger px-2 py-3">
+    <div class="row">
+      <div class="col-lg-4 pt-5 text-capitalize text-white">
+        <h1 class="px-3">Promoting a culture of honour and honouring.</h1>
+      </div>
+      <div class="col-lg-8 pb-5 pt-5 text-white">
+          <p class="lead">We seek to promote a culture of honour and honouring,
+          in the belief that it is essential for the continuing peace, progress, and prosperity of Ghana...</p>
+          <a href="{% url 'about' %}" class="btn btn-sm btn-warning lead px-5 text-white">Learn more about our mission.</a>
+      </div>
+    </div>
+  </div>
+<!--End of red section-->
+  <!--Warning section-->
+  <div class="container-fluid g-0 text-white" style="font-family: 'Roboto', sans-serif; background: url('{% static 'honour_main/images/assets/webimages/bg.jpg' %}'); background-repeat: no-repeat; background-size: cover;">
+    <div class="p-5 grad-bg opacity-75 d-flex justify-content-center">
+      <div class="float-end p-2 fold-paper">
+        <h4 class="d-flex justify-content-center border-bottom border-secondary p-2 visible">Special Feature</h4>
+        <h1>Honour in a Time of Economic Crisis!</h1>
+      <p>
+Honour is needed now, more than ever before.</p>
+      <a href="#" class="btn btn-lg btn-danger lead">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <!--End of warning-->
+  <!--Green Section-->
+  <div class="container-fluid p-5 bg-success" style="font-family: 'Roboto', sans-serif;">
+    <div class="row">
+      <div class="col-md-7 col-lg-7 p text-capitalize text-white">
+        <h1>Our initiatives</h1>
+      </div>
+      <div class="col-md-5 col-lg-5">
+          <a href="{% url 'initiatives' %}" class="btn btn-md btn-danger">More on our initiatives</a>
+      </div>
+    </div>
+  </div>
+  <!--End of Green-->
+  <!--Four Cols-->
+  <section class="mt-5 mb-5">
+      <div class="container-fluid text-muted">
+    <div class="row g-3">
+      <div class="col-lg-4 bg-shadow p-2 shadow-lg">
+        <span><object data="{% static 'honour_main/images/ceo.svg' %}" class="filter-green"></object></span>
+        <a href="{% url 'initiatives' %}" class="fw-bold text-danger text-decoration-underline header">Honour Entrepreneurship & CEO Forums</a>
+        <p>The Honour entrepreneurship capacity development team is tasked with teaching memebers the fundamentals of entrepreneurship...</p>
+      </div>
+      <div class="col-lg-4 bg-shadow p-2 shadow-lg">
+        <span><object data="{% static 'honour_main/images/social.svg' %}" class="filter-green"></object></span>
+        <a href="{% url 'initiatives' %}" class="fw-bold text-danger text-decoration-underline header">eCommunity of Honour Champions</a>
+        <p>An eCommunity of Honour Champions (eHCs), organised in Honour Community Groups (HCGs),
+        where members share experiences to help one other succeed and to pursue the path of honour...</p>
+      </div>
+      <div class="col-lg-4 bg-shadow p-2 shadow-lg">
+        <span><object data="{% static 'honour_main/images/video.svg' %}" class="filter-green"></object><span>
+        <a href="{% url 'films' %}" class="fw-bold text-danger text-decoration-underline header">Honour Film Initiative</a>
+        <p>The media team produces brief videos to highlight the remarkable works of some people who deserve to be honoured in our society,
+        in keeping with the organization's mission to give credit to whom credit is due...</p>
+      </div>
+      <div class="col-lg-4 bg-shadow p-2 shadow-lg">
+        <span><object data="{% static 'honour_main/images/forum.svg' %}" class="filter-green"></object></span>
+        <a href="{% url 'initiatives' %}" class="fw-bold text-danger text-decoration-underline header">Honour championships community(HCC)</a>
+        <p>Honour collaborates with various educational institutions to build Honour Champions Communitities, whihc are social clubs...</p>
+      </div>
+      <div class="col-lg-4 bg-shadow p-2 shadow-lg">
+        <span><object data="{% static 'honour_main/images/bulb.svg' %}" class="filter-green"></object></span>
+        <a href="{% url 'learning-journey' %}" class="fw-bold text-danger text-decoration-underline header">Honour Learning Journey</a>
+        <p>We inspire youth with a showcase of Honour short films, and facilitate a time of learning, reflection and takeaways about character,
+        citizenship and values...</p>
+      </div>
+      <div class="col-lg-4 bg-shadow p-2 shadow-lg">
+        <span><object data="{% static 'honour_main/images/heart.svg' %}" class="filter-green"></object></span>
+        <a href="{% url 'initiatives' %}" class="fw-bold text-danger text-decoration-underline header">#GoodKindGH</a>
+        <p>We seek to inspire acts of goodness & kindness, and to share them on social media via the hashtag #GoodKindGH.
+        Let’s do something good and kind today...</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!--End of Four Cols-->
+  <!--Collaborate with us-->
+  <section class="d-flex align-items-center border-bottom">
+    <div class="container p-1 float-start bg-light">
+    <div class="row row-col-1">
+      <h3 class="text-capitalize text-danger pl-5 ml-4">Collaborate with us</h3>
+    </div>
+  </div>
+  </section>
+  <div class="container p-5">
+    <div class="row g-3">
+      <div class="col-lg-5 mb-3 mb-md-3 mx-lg-5 mb-lg-0 shadow-lg on-hover" style="background: url('{% static 'honour_main/images/assets/webimages/sponsor.jpg' %}'); background-size: cover; background-repeat: no-repeat;">
+        <div class="d-flex justify-content-center py-4">
+            <span><img src="{% static 'honour_main/images/list.svg' %}" class="filter-green"></span>
+        </div>
+        <h1 class="text-white text-capitalize text-center text-color">sponsor an honour film</h1>
+        <p class="lead text-white text-capitalize p-2 lh-1 fw-bold text-center text-color">be a coporate sponsor on our next honour film</p>
+        <div class="d-flex justify-content-center py-4">
+              <span class="btn-radius"><a href="#" class="btn btn-lg btn-danger">Learn more</a></span>
+          </div>
+      </div>
+       <div class="col-lg-5 mb-sm-3 mb-md-3 mb-lg-0 shadow-lg on-hover" style="background: url('{% static 'honour_main/images/assets/webimages/sonpor-2.jpg' %}'); background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex justify-content-center py-4">
+            <span><img src="{% static 'honour_main/images/join.svg' %}" class="filter-green"></span>
+        </div>
+          <h1 class="text-white text-capitalize text-center text-color">inspire a #GoodKindGH</h1>
+          <p class="lead text-white text-capitalize p-2 lh-1 fw-bold text-center text-color">join us to inspire acts of goodness and kindness for a better Ghana</p>
+          <div class="d-flex justify-content-center py-4">
+              <span class="btn-radius"><a href="{% url 'films' %}" class="btn btn-lg btn-danger">Learn more</a></span>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!--End of Collaborate-->
+  <!--video-->
+  <div class="container-fluid p-5 bg-danger">
+    <div class="row g-3">
+        <div class="col-lg-6 d-none d-lg-block">
+            <div>
+                <img src="{% static 'honour_main/images/assets/webimages/cap.HG.png' %}" class="d-block w-100" alt="zakaria">
+            </div>
+        </div>
+      <div class="col-lg-6 p-1">
+        <h1 class="text-white text-capitalize">Honour capability framework for organizations</h1>
+        <p class="text-white">Honour is an input, a process, and an outcome. One cannot receive Honour
+        without first offering Honour through honourable intentions and actions. It is
+        through this framework that we can achieve the success we intend for.
+        </p>
+        <h3 class="text-white text-capitalize">Using the Framework for your Organization</h3>
+        <p class="text-white">Honour begins with us as individuals. We should be able to identify the values
+            we possess which are acceptable to the society so that we can build on them.
+        </p>
+        <p class="text-white">On
+            the other hand, we should endeavour to identify our behaviours which are not
+            acceptable so that we work on eschewing them. This will empower us to be the
+            best we can be.
+            As students, we cannot succeed without respecting our parents and teachers and
+            obeying the school rules and regulations. By doing this, we honour those around
+            us.</p>
+      </div>
+    </div>
+  </div>
+  <!--end of video-->
+{% endblock content %}

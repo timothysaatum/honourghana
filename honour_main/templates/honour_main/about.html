@@ -1,0 +1,129 @@
+{% extends 'honour_main/base.html' %}
+{% load static %}
+{% block title %}
+    Honour Ghana-About
+{% endblock title %}
+{% block content %}
+<!--picture background-->
+<div class="container-fluid bg-custom-img p-5">
+    <div class="row row-12 d-flex align-items-center top-0 h-100">
+        <div class="col text-white pt-3 animate__animated animate__bounceInDown text-shadow">
+            <h1 class="d-flex justify-content-center pt-5">Honour is Ghana's future.</h1>
+            <p class="lead d-flex justify-content-center">It has always been and will be the blueprint for Ghana's success.</p>
+        </div>
+    </div>
+</div>
+<!--end of picture background-->
+<!--Red Banner-->
+<div class="container-fluid bg-danger py-5">
+    <div class="row row-col-12">
+        <div class="col py-5 mx-3">
+            <p class="lead text-white">
+                Honour Ghana is a non-governmental organization, which seeks to promote the culture of honour, honouring and integrity among the Ghanaian youth through Honour Champions
+                Communities,films, seminars and workshops. Honour Ghana was incorporated under the Companies Act, 1963 (Act 179) on 25th October, 2019. It is recognized nationally by the
+                Department of Social Welfare as a Non-Governmental Organization.
+            </p>
+        </div>
+    </div>
+</div>
+<!--End of Red Banner-->
+
+<!--Mission and Vision-->
+<div class="container-fluid bg-light">
+    <div class="row g-4">
+        <div class="col-lg-6 p-2">
+            <span class="eye text-danger d-flex justify-content-center">
+                <img src="{% static 'honour_main/images/eye.svg' %}" alt="honour-gh-vision" class="filter-green">
+            </span>
+            <h1 class="text-danger d-flex justify-content-center display-1">Vision</h1>
+            <p class="lead text-muted d-flex justify-content-center text-center p-4">A nation where Honour and Honouring are well understood and widely practised</p>
+        </div>
+        <div class="col-lg-6 p-2">
+            <span class="eye text-danger d-flex justify-content-center">
+                <img src="{% static 'honour_main/images/heart.svg' %}" alt="honour-ghana-mission" class="filter-green">
+            </span>
+            <h1 class="text-danger d-flex justify-content-center display-1">Mission</h1>
+            <p class="lead text-muted d-flex justify-content-center text-center p-4">To seek the well-being of the nation by promoting a culture of Honour and Honouring</p>
+        </div>
+    </div>
+</div>
+<!--End of Mission and Vision-->
+<!--Dark bg-->
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col-8 text-center">
+            <p class="h1 text-dark text-capitalize">Why Honour?</p>
+            <img src="{% static 'honour_main/images/assets/webimages/honour in local languages.png' %}" alt="honourgh-multi-language" class="w-fluid rounded">
+        </div>
+    </div>
+</div>
+<!--End of Dark bg-->
+<!--Two clomun-->
+<div class="container-fluid bg-light-grey p-5">
+    <div class="row">
+        <div class="col-lg-6 pt-5 mt-3">
+            <h5>Honour as Ghana’s Blueprint for Success</h5>
+            <p class="text-muted">
+                Cultural values are very important in the development of every society. These values outline the acceptable behaviours we need to exhibit to peacefully live with our friends, families and
+                the society in which Ghana is not an exception.
+            </p>
+            <p class="text-muted">
+                The success of an organization and the development of our country Ghana can be positively influenced by having a culture of honor and respect. Together, let us set ourselves on a path of
+                restoring the lost glory of the days where our cultural values were like second nature.
+            </p>
+        </div>
+        <div class="col-lg-6 phone on-hover">
+            <img src="{% static 'honour_main/images/assets/webimages/Ghana.jpg' %}" alt="honour-ghana" class="rounded w-100">
+        </div>
+    </div>
+</div>
+<!--End of Two column-->
+<!--second column-->
+<div class="container-fluid p-5">
+    <div class="row">
+        <div class="col-lg-6 pt-5 mt-3">
+            <h5>Honour as an Enabler for Constructive, Respectful Debate</h5>
+            <p class="text-muted">
+                As a nation, we can expect increasingly robust debates and social action on a widening array of national issues.
+                There must be a strong vein of honour and mutual respect between individuals and groups, even when there may be sharp differences in views.
+                This enables respectful, constructive debate over issues of national life.
+            </p>
+            <p class="text-muted">
+                Trust determines the quality of relationships in our community and society. Honour is the foundation of trust.
+            </p>
+            <p class="text-muted">
+                We believe a culture of honour and honouring should be our compass as we head, as always, into the uncharted waters of our future.
+            </p>
+        </div>
+        <div class="col-lg-6 phone on-hover">
+            <img src="{% static 'honour_main/images/assets/webimages/IMG-20230617-WA0017.jpg' %}" alt="honour-ghana" class="rounded w-100">
+        </div>
+    </div>
+</div>
+<!--End of second column-->
+<!--Honour 2-dimension-->
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col col-10 pb-3 on-hover">
+            <img src="{% static 'honour_main/images/assets/webimages/Dimensions-of-Honour-2.png' %}" alt="dimensions-of-honour-2" class="w-100">
+        </div>
+        <div class="col col-sm-8 col-lg-6 pt-3">
+            <h5 class="text-center">The 2 Dimensions of Honour</h5>
+            <p class="text-muted">
+                While there are arguably many dimensions to Honour, there are two dimensions that are particularly important for the survival
+                and success of relationships and leadership in families, organisations, communities, and nations –<span class="fw-bold"> Honouring one’s word, and Honouring one another</span>.
+            </p>
+            <p class="text-muted">Honour is living by virtues, which are values in action.
+            When you live an honourable life, you live according to universal virtues, and
+            show great respect to yourself and other people by keeping your word and doing the right thing regardless of what others are doing.
+            </p>
+            <P class="text-muted">
+                Honour can thus be said to be the virtue of all virtues, for without honour, one would not live out the values that one believes in.
+                Honour defines our humanity and it is ours to lose. It is like a muscle – we are born with it,
+                but whether it maintains its functionality and grows depends on whether we choose to use and exercise it.
+            </P>
+        </div>
+    </div>
+</div>
+<!--End of 2-dimension-->
+{% endblock content %}

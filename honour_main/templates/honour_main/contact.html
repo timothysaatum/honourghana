@@ -1,0 +1,56 @@
+{% extends 'honour_main/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}
+    Honour Ghana-Contact
+{% endblock title %}
+{% block content %}
+<!--Contact bg pic-->
+<div class="container-fluid phone p-5 d-flex justify-content-center" style="background: url('{% static 'honour_main/images/assets/webimages/contact.jpg' %}'); background-size: cover;
+background-repeat: no-repeat; height: 400px !important; width: 100%;">
+    <div class="row d-flex align-items-center">
+        <div class="col col-sm-12 col-lg-auto animate__animated animate__bounceInDown text-shadow">
+            <h1 class="text-white">Connect With Us</h1>
+            <p class="lead text-white">We are always on the lookout for like-minded partners to collaborate with, so go on and get in touch with us!</p>
+        </div>
+    </div>
+</div>
+<!--End of Contact bg pic-->
+
+<!--Red Banner-->
+<div class="container-fluid bg-danger p-5">
+    <div class="row">
+        <div class="col">
+            <p class="lead text-white fw-blod">
+                At Honour (Ghana), we believe in the power of collaboration to amplify social causes.
+                After all, no one can build a culture of Honour alone. As such, we are always on the lookout for like-minded partners to collaborate with.
+                Whether you are an educator, a brand or an NGO, we believe we can definitely do more for Ghana – together.
+            </p>
+        </div>
+    </div>
+</div>
+<!--Endof Red Banner-->
+<!--Contact Form-->
+<div class="container bg-light-grey p-5 d-flex justify-content-center">
+    <div class="row">
+        <div class="container">
+            <div class="row bg-light d-flex justify-content-center">
+                <div class="col-lg-6">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <div class="text-success">
+                                {{form|crispy}}
+                                <div class="form-group text-center mt-3">
+                                    <button class="btn btn-outline-success" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of contact Form-->
+{% endblock content %}

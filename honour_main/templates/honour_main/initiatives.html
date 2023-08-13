@@ -1,0 +1,118 @@
+{% extends 'honour_main/base.html' %}
+{% load static %}
+{% block title %}
+    Honour Ghana-Initiatives
+{% endblock title %}
+{% block content %}
+<section class="p-1 m-1">
+    <div class="container-fluid p-5 initiative-bg">
+    <div class="row row-1 d-flex align-items-center top-0 h-100">
+        <div class="col text-white pt-3 animate__animated animate__bounceInDown text-shadow">
+            <h1 class="d-flex justify-content-center pt-5">Inspiring leaders and society at large</h1>
+            <p class="lead d-flex justify-content-center">Embrace Honour as an integral part of your leadership philosophy.</p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="bg-color justify-content-center my-4 py-4 border-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="border-bottom px-4 my-5">
+            <h1 class="text-red">Honour in Business</h1>
+        </div>
+            <div class="col-lg-6">
+                <img src="https://cdn.pixabay.com/photo/2022/05/04/02/29/calligraphy-7173006__340.jpg" alt="" height="auto" width="100%" class="rounded">
+                <h3 class="text-red">Honour Entrepreneurship & CEO Forums</h3>
+                <p>Honour has long been the foundation for thriving businesses.
+                No business can grow and thrive without honouring its employees, customers and stakeholders.
+                </p>
+                <p>Through our entrepreneurship and CEO Forums,
+                we engage corporate leaders who desire to embrace the value of Honour as an integral part of their leadership philosophy – to walk the talk,
+                lead with integrity and to honour those whom they serve.
+                </p>
+                <p>We also developed the Honour Toolkit to help organisations uphold and honour their values.
+                To get a copy of the Honour Toolkit, <span><a href="{% url 'contact' %}" class="text-decoration-none">get in touch</a></span> with us.</p>
+                <a href="#" class="btn btn-danger btn-sm my-4 p-3">About the honour international symposium</a>
+                <a href="#" class="btn btn-danger btn-sm my-4 p-3">About the honour toolkit</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://cdn.pixabay.com/photo/2022/05/04/02/29/calligraphy-7173006__340.jpg" alt="" height="auto" width="100%" class="rounded">
+                <h3 class="text-red">Honour Champions Community</h3>
+                <p>The Honour Champions Community provides a platform for individuals who believe in a culture of honour and honouring,
+                to belong to a tribe or community where Honour is the enduring and resonating value;
+                and to become an Honour-driven individual who seeks to influence their family, community and workplace.
+                </p>
+                <p>Honour Champions meet in Honour Champion Groups (HCGs), where members can share experiences – both successes
+                and challenges – to help fellow Champions better succeed;
+                and to encourage one another to pursue the path of honour despite possible setbacks and disappointments.</p>
+                <a href="#" class="btn btn-danger btn-sm my-4 p-3">Join the honour champions</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-color justify-content-center border-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="border-bottom px-4 my-5">
+            <h1 class="text-red">Honour in Education</h1>
+        </div>
+            <div class="col-lg-6">
+                <img src="https://cdn.pixabay.com/photo/2022/05/04/02/29/calligraphy-7173006__340.jpg" alt="" height="auto" width="100%" class="rounded">
+                <h3 class="text-red">Honour Film Initiative</h3>
+                <p>The <span><a href="{% url 'films' %}" class="text-decoration-none text-danger">Honour Film Initiative</a></span> enables young emerging filmmakers to tell stories that otherwise may never get told.
+                Stories of honour in its various dimensions:
+                Integrity, respect, resilience, thrift and hard work.
+                </p>
+                <a href="{% url 'films' %}" class="btn btn-danger btn-sm my-4 p-3">learn more</a>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="text-red">Honour Learning Journey</h3>
+                <p>The Honour Learning Journey is a showcase of the best Honour short films,
+                presented with the objective of inspiring youth with these stories of honour.
+                It is an innovative film-based approach to values education.
+                </p>
+                <a href="{% url 'learning-journey' %}" class="btn btn-danger btn-sm my-4 p-3">learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-color justify-content-center border-bottom">
+    <div class="container">
+        <div class="border-bottom px-4 my-5">
+            <h1 class="text-red">Honour in Society</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="https://cdn.pixabay.com/photo/2022/05/04/02/29/calligraphy-7173006__340.jpg" alt="" height="auto" width="100%" class="rounded">
+                <h3 class="text-red">Honour Film Initiative (Online Outreach)</h3>
+                <p>In a world of increasing income and wealth inequality, honouring people deeply as
+                individuals deserving of dignity and respect becomes even more important.
+                </p>
+                <p>To celebrate these individuals and their stories of honour, we present the Honour short films online,
+                where we seek to generate million views, and sparked lively conversations about the value of honour.
+                </p>
+                <a href="{% url 'films' %}" class="btn btn-danger btn-sm my-4 p-3">Watch our honour short films</a>
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'honour_main/images/assets/webimages/kind.jpg' %}" height="auto" width="100%" class="rounded">
+                <h3 class="text-red">#GoodKindGH</h3>
+                <p>Today, more than ever, our society needs acts of goodness & kindness as we experience the effects of the global pandemic and economic crisis.
+                In response to this need, #GoodKindGH is a
+                volunteer-led initiative to appreciate and inspire acts of goodness & kindness, supported by both Honour (Ghana).
+                </p>
+                <p>Whenever you do, see or experience an act of goodness & kindness,
+                share it on social media and hashtag #GoodKindGH to inspire others.
+                Let’s do something good and kind today!</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="https://cdn.pixabay.com/photo/2022/05/04/02/29/calligraphy-7173006__340.jpg" alt="" height="auto" width="100%" class="rounded">
+                <h3 class="text-red">Civil Society Forums</h3>
+                <p>In an increasingly polarised society, Honour is crucial so that
+                disagreements do not escalate to become vindictive or divisive, which would be a loss for Ghana as a society.
+                </p>
+                <p>Through our Civil Society Forums, we seek to encourage and grow the space for mutually respectful dialogue among civil society leaders.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
